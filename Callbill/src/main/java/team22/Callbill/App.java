@@ -80,7 +80,11 @@ public class App
 		// private constructor to hide the implicit public one.
 	}
 	private static Logger log = Logger.getLogger(CallBill.class);
+<<<<<<< HEAD:Callbill/src/main/java/team22/Callbill/App.java
    	public static void main( String[] args )
+=======
+    	public static void main( String[] args )
+>>>>>>> 5741d6c11ba6770bec2dcb76167fb422291183f0:CallingBill/src/main/java/team22/CallingBill/App.java
     	{	
     		CallBill call = new CallBill();
 		Scanner input = new Scanner(System.in);
