@@ -1,4 +1,4 @@
-package team22.CallingBill;
+package team22.Callbill;
 import java.util.Scanner;
 import org.apache.log4j.*;
 

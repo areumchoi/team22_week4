@@ -1,4 +1,4 @@
-package team22.CallingBill;
+package team22.Callbill;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
