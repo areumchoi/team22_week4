@@ -73,7 +73,6 @@ class CallBill{
 		return totalBill;
 	}
 }
-
 public class App 
 {
 	private App(){
