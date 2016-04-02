@@ -13,7 +13,7 @@ class Call_bill{
 	private static final String Gold = "gold";
 	
 	public Call_bill(){
-		//객체를 가져오기 위한 생성자
+		//Constructor about object
 	}
 	public void baseBill(){
 		if(Silver.equals(grade)){
@@ -24,15 +24,11 @@ class Call_bill{
 		}
 	}
 	public void extraBill(){
-		if(Silver.equals(grade)){
-			if(time>60){
+		if(Silver.equals(grade)&&time>60){
 				bill = bill+((time-60)*540);
-			}
 		}
-		else if(Gold.equals(grade)){
-			if(time>120){
+		else if(Gold.equals(grade)&&time>12){
 				bill = bill+((time-120)*450);
-			}
 		}
 	}
 	public void lineBill(){
@@ -55,7 +51,7 @@ class Call_bill{
 		}
 	}
 	public int totalBill(){
-		int total_bill=0;
+		int total_bill;
 		baseBill();
 		extraBill();
 		lineBill();
@@ -67,18 +63,21 @@ class Call_bill{
 
 public class App 
 {
+	private App(){
+		//private Constructor to hide the implicit public one.
+	}
     public static void main( String[] args )
     {
     	Call_bill call = new Call_bill();
 		Scanner input = new Scanner(System.in);
-		System.out.println("요금제를 입력하시오: ");
+		System.out.println("your grade: ");
 		call.grade = input.next();
-		System.out.println("추가 line을 입려하시오: ");
+		System.out.println("your additional line number: ");
 		call.line = input.nextInt();
-		System.out.println("사용 시간을 입력하시오: ");
+		System.out.println("your using time: ");
 		call.time = input.nextInt();
 		
-		System.out.println("당신의 grade는  "+call.grade+"이고, line은 "+call.line+"이며, 사용 시간은 "+call.time+"입니다.");
-		System.out.println("최종 사용 금액은: "+call.totalBill());
+		System.out.println("your grade is  "+call.grade+",and line is "+call.line+",and using time is "+call.time+".");
+		System.out.println("your total using money is : "+call.totalBill());
     }
 }
