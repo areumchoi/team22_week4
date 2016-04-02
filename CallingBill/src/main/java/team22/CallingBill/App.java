@@ -76,10 +76,13 @@ class CallBill{
 
 public class App 
 {
+	private App(){
+		// private constructor to hide the implicit public one.
+	}
 	private static Logger log = Logger.getLogger(CallBill.class);
-    public static void main( String[] args )
-    {	
-    	CallBill call = new CallBill();
+    	public static void main( String[] args )
+    	{	
+    		CallBill call = new CallBill();
 		Scanner input = new Scanner(System.in);
 		log.info("your grade: ");
 		call.grade = input.next();
