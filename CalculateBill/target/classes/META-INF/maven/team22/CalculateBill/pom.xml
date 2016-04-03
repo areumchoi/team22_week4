@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>team22</groupId>
-  <artifactId>Callingbill</artifactId>
+  <artifactId>CalculateBill</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Callingbill</name>
+  <name>CalculateBill</name>
   <url>http://maven.apache.org</url>
 
   <properties>
