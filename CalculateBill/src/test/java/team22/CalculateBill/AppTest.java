@@ -1,4 +1,4 @@
-package team22.CalculateBill;
+package TEAM22.CALCULATEBILL;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

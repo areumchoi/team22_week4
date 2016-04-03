@@ -1,4 +1,4 @@
-package team22.CalculateBill;
+package TEAM22.CALCULATEBILL;
 
 import java.util.Scanner;
 import org.apache.log4j.*;
