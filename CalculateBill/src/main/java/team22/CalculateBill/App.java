@@ -14,6 +14,7 @@ class CallBill{
    String grade;
    private static final String SILVER = "silver";
    private static final String GOLD = "gold";
+   private static final String ERR = "enter correct Grade!!";
    private static Logger log = Logger.getLogger(CallBill.class);
    
    public CallBill(){
@@ -27,7 +28,7 @@ class CallBill{
          bill = 59000;
       }
       else{
-         log.error("enter correct Grade!!");
+         log.error(ERR);
       }
    }
    public void extraBill(){
@@ -38,7 +39,7 @@ class CallBill{
             bill = bill+((time-120)*450);
       }
       else{
-         log.error("enter correct Grade!!");
+         log.error(ERR);
       }
 
    }
@@ -50,7 +51,7 @@ class CallBill{
          bill = bill + ((line-1)*30000);
       }
       else{
-         log.error("enter correct Grade!!");
+         log.error(ERR);
       }
    }
    public void lineDiscount(){
