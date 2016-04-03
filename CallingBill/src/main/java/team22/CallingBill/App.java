@@ -11,18 +11,18 @@ class CallBill{
 	int bill;
 	int line;
 	String grade;
-	private static final String Silver = "silver";
-	private static final String Gold = "gold";
+	private static final String SILVER = "silver";
+	private static final String GOLD = "gold";
 	private static Logger log = Logger.getLogger(CallBill.class);
 	
 	public CallBill(){
 		//Constructor about object
 	}
 	public void baseBill(){
-		if(Silver.equals(grade)){
+		if(SILVER.equals(grade)){
 			bill = 39000;
 		}
-		else if(Gold.equals(grade)){
+		else if(GOLD.equals(grade)){
 			bill = 59000;
 		}
 		else{
@@ -30,10 +30,10 @@ class CallBill{
 		}
 	}
 	public void extraBill(){
-		if(Silver.equals(grade)&&time>60){
+		if(SILVER.equals(grade)&&time>60){
 				bill = bill+((time-60)*540);
 		}
-		else if(Gold.equals(grade)&&time>12){
+		else if(GOLD.equals(grade)&&time>12){
 				bill = bill+((time-120)*450);
 		}
 		else{
@@ -42,10 +42,10 @@ class CallBill{
 
 	}
 	public void lineBill(){
-		if(Silver.equals(grade)){
+		if(SILVER.equals(grade)){
 			bill = bill +((line-1)*39000);
 		}
-		else if(Gold.equals(grade)){
+		else if(GOLD.equals(grade)){
 			bill = bill + ((line-1)*30000);
 		}
 		else{
