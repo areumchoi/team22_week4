@@ -9,7 +9,7 @@ class CallBill{
    int line;
    String grade;
    private static final String SILVER = "silver";
-   private static final String GOLD= "goldzzzzzzzzzzzzz";
+   private static final String GOLD= "gold";
    private static final String ERROR = "Insert correct value.";
    private static final Logger log = LoggerFactory.getLogger(CallBill.class);
    
