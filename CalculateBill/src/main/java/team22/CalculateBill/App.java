@@ -4,7 +4,7 @@ import java.util.Scanner;
 import org.apache.log4j.*;
 
 /**
- * Hello world! 아아아아아앙아아아아 깃시바롤로어아아아아아아아아ㅏ
+ * Hello world! fuck_git
  *
  */
 class CallBill{
