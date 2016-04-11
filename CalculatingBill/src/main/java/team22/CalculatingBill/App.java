@@ -1,11 +1,8 @@
-package team22.CalculatorBill;
+package team22.CalculatingBill;
 import java.util.Scanner;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-/**
- * Hello world!
- *
- */
 class CallBill{
    int time;
    int bill;
@@ -14,7 +11,7 @@ class CallBill{
    private static final String SILVER = "silver";
    private static final String GOLD = "gold";
    private static final String ERROR = "Insert correct value.";
-   protected static Logger log = Logger.getLogger(CallBill.class.getName());
+   private static final Logger log = LoggerFactory.getLogger(CallBill.class);
    
    public CallBill(){
       //Constructor about object
@@ -75,7 +72,7 @@ class CallBill{
 }
 public class App 
 {
-	protected static Logger log = Logger.getLogger(App.class.getName());
+	private static final Logger log = LoggerFactory.getLogger(CallBill.class); 
 	private App(){
       // private constructor to hide the implicit public one.
 	}
