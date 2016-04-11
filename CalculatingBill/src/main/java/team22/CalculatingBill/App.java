@@ -24,7 +24,7 @@ class CallBill{
          bill = 59000;
       }
       else{
-    	  log.error("ERROR");
+    	  log.error(ERROR);
       }
    }
    public void extraBill(){
@@ -35,7 +35,7 @@ class CallBill{
             bill = bill+((time-120)*450);
       }
       else{
-    	  log.error("ERROR");
+    	  log.error(ERROR);
       }
    }
    public void lineBill(){
@@ -46,7 +46,7 @@ class CallBill{
          bill = bill + ((line-1)*30000);
       }
       else{
-    	  log.error("ERROR");
+    	  log.error(ERROR);
       }
    }
    public void lineDiscount(){
