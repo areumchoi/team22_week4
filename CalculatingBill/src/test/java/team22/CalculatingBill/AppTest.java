@@ -35,4 +35,13 @@ public class AppTest
     {
         assertTrue( true );
     }
+    
+    public void testBase(){
+        CallBill call1 = new CallBill("silver",0,60);
+        CallBill call2 = new CallBill("gold",0,60);
+        int basebill1 = call1.baseBill();
+        int basebill2 = call2.baseBill();
+        assertEquals(39000,basebill1);
+        assertEquals(59000,basebill2);
+     }
 }
