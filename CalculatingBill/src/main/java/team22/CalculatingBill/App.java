@@ -16,7 +16,14 @@ class CallBill{
    public CallBill(){
       //Constructor about object
    }
-   public void baseBill(){
+   
+   public CallBill(String grade, int line, int time){
+	      this.grade = grade;
+	      this.line = line;
+	      this.time=time;
+   }
+   
+   public int baseBill(){
       if(SILVER.equals(grade)){
          bill = 39000;
       }
@@ -26,6 +33,8 @@ class CallBill{
       else{
     	  log.error(ERROR);
       }
+      
+      return bill;
    }
    public void extraBill(){
       if(SILVER.equals(grade)&&time>60){
