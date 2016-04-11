@@ -4,7 +4,7 @@ import java.util.Scanner;
 import org.apache.log4j.*;
 
 /**
- * Hello world! fuck_git
+ * Hello world! change git
  *
  */
 class CallBill{
