@@ -23,7 +23,7 @@ class CallBill{
 	      this.time=time;
    }
    
-   public int baseBill(){
+   public void baseBill(){
       if(SILVER.equals(grade)){
          bill = 39000;
       }
@@ -33,8 +33,6 @@ class CallBill{
       else{
     	  log.error(ERROR);
       }
-      
-      return bill;
    }
    public void extraBill(){
       if(SILVER.equals(grade)&&time>60){
@@ -49,10 +47,10 @@ class CallBill{
    }
    public void lineBill(){
       if(SILVER.equals(grade)){
-         bill = bill +((line-1)*39000);
+         bill = bill +(line*39000);
       }
       else if(GOLD.equals(grade)){
-         bill = bill + ((line-1)*30000);
+         bill = bill + (line*30000);
       }
       else{
     	  log.error(ERROR);
@@ -65,7 +63,7 @@ class CallBill{
       else if(line==4){
          bill=bill-3000;
       }
-      else if(line>5){
+      else if(line>=5){
          bill=bill-4000;
       }
    }
