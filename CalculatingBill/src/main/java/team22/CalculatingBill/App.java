@@ -38,7 +38,7 @@ class CallBill{
       if(SILVER.equals(grade)&&time>60){
             bill = bill+((time-60)*540);
       }
-      else if(GOLD.equals(grade)&&time>12){
+      else if(GOLD.equals(grade)&&time>120){
             bill = bill+((time-120)*450);
       }
       else{
