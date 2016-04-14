@@ -36,29 +36,29 @@ public class AppTest
         assertTrue( true );
     }
     
-    public void testBase(){
-        CallBill call1 = new CallBill("silver", 0, 60);
-        CallBill call2 = new CallBill("silver", 1, 60);
-        CallBill call3 = new CallBill("silver", 2, 60);
-        CallBill call4 = new CallBill("silver", 3, 60);
-        CallBill call5 = new CallBill("silver", 4, 60);
-        CallBill call6 = new CallBill("silver", 5, 60);
-        //CallBill call7 = new CallBill("gold", 0, 60);
+    public void testSilver(){
+        CallBill callSilver1 = new CallBill("silver", 0, 60);
+        CallBill callSilver2 = new CallBill("silver", 1, 60);
+        CallBill callSilver3 = new CallBill("silver", 2, 60);
+        CallBill callSilver4 = new CallBill("silver", 3, 60);
+        CallBill callSilver5 = new CallBill("silver", 4, 60);
+        CallBill callSilver6 = new CallBill("silver", 5, 60);
         
-        int testbill1 = call1.totalBill();
-        int testbill2 = call2.totalBill();
-        int testbill3 = call3.totalBill();
-        int testbill4 = call4.totalBill();
-        int testbill5 = call5.totalBill();
-        int testbill6 = call6.totalBill();
-        //int testbill7 = call7.totalBill();
+        int testSilver1 = callSilver1.totalBill();
+        int testSilver2 = callSilver2.totalBill();
+        int testSilver3 = callSilver3.totalBill();
+        int testSilver4 = callSilver4.totalBill();
+        int testSilver5 = callSilver5.totalBill();
+        int testSilver6 = callSilver6.totalBill();
+
         
-        assertEquals(39000,testbill1);
-        assertEquals(78000,testbill2);
-        assertEquals(117000,testbill3);
-        assertEquals(154000,testbill4);
-        assertEquals(192000,testbill5);
-        assertEquals(230000,testbill6);
-        //assertEquals(59000,testbill7);
+        assertEquals(39000,testSilver1);
+        assertEquals(78000,testSilver2);
+        assertEquals(117000,testSilver3);
+        assertEquals(154000,testSilver4);
+        assertEquals(192000,testSilver5);
+        assertEquals(230000,testSilver6);
+
      }
+
 }
