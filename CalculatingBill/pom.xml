@@ -10,7 +10,25 @@
   <name>CalculatingBill</name>
   <url>http://maven.apache.org</url>  
   <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+	<testResources>
+      <testResource>
+        <directory>src/main/resources</directory>
+      </testResource>
+	</testResources>
+    
     <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
@@ -24,7 +42,7 @@
           </execution>
         </executions>
       </plugin>
-   </plugins>
+   </plugins>   
   </build>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
